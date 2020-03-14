@@ -7,26 +7,20 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
-        .banner
+        //-banner Area
+        .header-area
+            //-overlay
             .overlay
-            //-Top bar area
-            div(class="toppar-area")
-                .container
-                    .row.text-center
-                        .col-4.page-title
-                            h2 Aboukir High Institutes
-                        .col-4
-                            a(href="#", title="title" class="navbar-brand")
-                                img(src="img/logo-home.png", alt="" class="logo")
-                        .col-4
-                            form(action="" class="form-inline" )
-                                input(class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search")
-                                button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
-            
             //-Header Page
             include helper/header
-
-
+            //-banner
+            .banner
+                .container
+                    .row
+                        .col-sm-6.py-5
+                            h2.h1 Aboukir High Institutes
+                            p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nesciunt fuga omnis voluptatum doloremque eum.
+                            button(class="see-more") See More
 
 
 
