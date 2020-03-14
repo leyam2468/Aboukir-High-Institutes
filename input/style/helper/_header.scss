@@ -1,0 +1,25 @@
+.navbar-area {
+    .navbar {
+        box-shadow: 2px 2px 5px ;
+        padding-top: 0;
+        .navbar-brand {
+            margin-right: 0;
+        }
+        .navbar-nav {
+            .nav-item {
+                .navbar-brand {
+                    img.logo {
+                        width: 70px;
+                    }
+                }
+                .nav-link {
+                    margin-top: 20px;
+                }
+                a {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

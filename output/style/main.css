@@ -1,7 +1,15 @@
-body {
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.navbar-area .navbar {
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+  padding-top: 0; }
+  .navbar-area .navbar .navbar-brand {
+    margin-right: 0; }
+  .navbar-area .navbar .navbar-nav .nav-item .navbar-brand img.logo {
+    width: 70px; }
+  .navbar-area .navbar .navbar-nav .nav-item .nav-link {
+    margin-top: 20px; }
+  .navbar-area .navbar .navbar-nav .nav-item a {
+    font-size: 1.2rem;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

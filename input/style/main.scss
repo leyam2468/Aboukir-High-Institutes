@@ -1,4 +1,6 @@
-body {
-    color: black;
-    display: flex;
-}
+//-variybles
+@import "helper/var";
+//-Global items
+@import "helper/global";
+//-header area
+@import "helper/header"
