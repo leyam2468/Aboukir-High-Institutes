@@ -7,6 +7,18 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
+        .top-bar
+            .container
+                .row.text-center
+                    .col-4
+                        h2.page-title Aboukir High Institutes
+                    .col-4
+                        a(href="#", title="title" class="navbar-brand")
+                            img(src="img/logo-home.png", alt="" class="logo")
+                    .col-4
+                        form(action="" class="form-inline" )
+                            input(class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search")
+                            button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
         //-Header Page
         include helper/header
         
