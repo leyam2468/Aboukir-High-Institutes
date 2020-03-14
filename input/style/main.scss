@@ -3,4 +3,22 @@
 //-Global items
 @import "helper/global";
 //-header area
-@import "helper/header"
+@import "helper/header";
+
+//-top bar
+.toppar-area{
+    .page-title {
+        margin-top: 25px;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .navbar-brand {
+        img {
+            width: 75px;
+        }
+    }
+    .form-inline {
+        margin-top: 25px;
+    }
+}
