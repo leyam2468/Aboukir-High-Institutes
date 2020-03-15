@@ -5,22 +5,22 @@
         box-shadow: 2px 2px 5px black;
         padding: 0 10px;
         z-index: 1;
-        .navbar-toggler {
-            border-color:$color-one ;
-            outline: none;
-        }
+
         .navbar-brand {
             padding: 0;
             img.logo {
                 width: 70px;
             }
         }
+        .navbar-toggler {
+            border-color:white ;
+            outline: none;
+        }
         .navbar-nav {
             li.nav-item {
                 margin: 0 10px;
                 a {
                     font-size: 1rem;
-                    font-weight: bold;
                     font-family: $font-tow;
                     color: white;
                     &:hover {
@@ -40,6 +40,13 @@
                     }
                 }
             }
+        }
+        .dropdown {
+            .btn-secondary{
+                background-color: transparent;
+                border-color: transparent;
+            }
+
         }
     }
 }

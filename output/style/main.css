@@ -11,18 +11,17 @@ body {
           box-shadow: 2px 2px 5px black;
   padding: 0 10px;
   z-index: 1; }
-  .navbar-area .navbar .navbar-toggler {
-    border-color: #216f05;
-    outline: none; }
   .navbar-area .navbar .navbar-brand {
     padding: 0; }
     .navbar-area .navbar .navbar-brand img.logo {
       width: 70px; }
+  .navbar-area .navbar .navbar-toggler {
+    border-color: white;
+    outline: none; }
   .navbar-area .navbar .navbar-nav li.nav-item {
     margin: 0 10px; }
     .navbar-area .navbar .navbar-nav li.nav-item a {
       font-size: 1rem;
-      font-weight: bold;
       font-family: "Lemon", cursive;
       color: white; }
       .navbar-area .navbar .navbar-nav li.nav-item a:hover {
@@ -35,6 +34,9 @@ body {
       width: 100%;
       height: 3px;
       background-color: var(--warning); }
+  .navbar-area .navbar .dropdown .btn-secondary {
+    background-color: transparent;
+    border-color: transparent; }
 
 .header-area {
   width: 100%;

@@ -7,6 +7,7 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
+
         //-banner Area
         .header-area
             //-overlay
@@ -14,8 +15,21 @@ html(lang="en")
             //-Header Page
             include helper/header
             //-banner
-            
-
+            div( class="d-none d-md-block" aria-live="polite" aria-atomic="true" style="position: relative;")
+                    div(style="position: absolute; top: 10px; right: 10px;")
+                    
+                        div(class="toast" data-animation="true" data-autohide="true" data-delay="5000" role="alert" aria-live="assertive" aria-atomic="true")
+                            div(class="toast-header")
+                                strong(class="mr-auto text-primary") Axel
+                                small(class="text-muted") 1 m
+                                button(type="button" class="ml-2 mb-1 close" data-dismiss="toast") &times;
+                            div(class="toast-body") Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, nobis?
+                        div(class="toast" data-animation="true" data-autohide="true" data-delay="6000" role="alert" aria-live="assertive" aria-atomic="true")
+                            div(class="toast-header")
+                                strong(class="mr-auto text-primary") Axel
+                                small(class="text-muted") 1 m
+                                button(type="button" class="ml-2 mb-1 close" data-dismiss="toast") &times;
+                            div(class="toast-body") Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, nobis?
             .banner
                 .container
                     .row
@@ -32,7 +46,7 @@ html(lang="en")
                                     i.fab.fa-twitter.fa-3x
                                     
                             button(class="see-more") See More
-
+        
             
 
 
