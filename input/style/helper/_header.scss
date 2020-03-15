@@ -1,7 +1,14 @@
 .navbar-area {
     .navbar {
-        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.329);
-        padding: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 2px 5px black;
+        padding: 0 10px;
+        z-index: 1;
+        .navbar-toggler {
+            border-color:$color-one ;
+            outline: none;
+        }
         .navbar-brand {
             padding: 0;
             img.logo {
@@ -12,10 +19,13 @@
             li.nav-item {
                 margin: 0 10px;
                 a {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: bold;
-                    font-family: $font-one;
+                    font-family: $font-tow;
                     color: white;
+                    &:hover {
+                        color: $color-tow;
+                    }
                 }
             }
             .active {

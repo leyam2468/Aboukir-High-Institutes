@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 body {
   font-family: "Roboto Condensed", sans-serif; }
 
 .navbar-area .navbar {
-  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.329);
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.329);
-  padding: 0; }
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  padding: 0 10px;
+  z-index: 1; }
+  .navbar-area .navbar .navbar-toggler {
+    border-color: #216f05;
+    outline: none; }
   .navbar-area .navbar .navbar-brand {
     padding: 0; }
     .navbar-area .navbar .navbar-brand img.logo {
@@ -14,10 +21,12 @@ body {
   .navbar-area .navbar .navbar-nav li.nav-item {
     margin: 0 10px; }
     .navbar-area .navbar .navbar-nav li.nav-item a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
-      font-family: "Roboto Condensed", sans-serif;
+      font-family: "Lemon", cursive;
       color: white; }
+      .navbar-area .navbar .navbar-nav li.nav-item a:hover {
+        color: var(--warning); }
   .navbar-area .navbar .navbar-nav .active .nav-link {
     color: var(--warning); }
     .navbar-area .navbar .navbar-nav .active .nav-link::after {
@@ -27,34 +36,6 @@ body {
       height: 3px;
       background-color: var(--warning); }
 
-/* .toppar-area{
-    background-color: #0000005e;
-    .page-title {
-        margin-top: 25px;
-        h2 {
-            font-size:2rem;
-            color: white;
-            font-family: $font-tow;
-            text-shadow: 2px 2px 5px black;
-        }
-    }
-    .navbar-brand {
-        img {
-            width: 70px;
-        }
-    }
-    .form-inline {
-        margin-top: 25px;
-        input{
-            background:none;
-            color: white;
-        }
-        .btn-outline-success {
-            color: #6c757d;
-            border-color: #ced4da;
-        }
-    }
-} */
 .header-area {
   width: 100%;
   height: 100vh;
@@ -69,29 +50,47 @@ body {
     background-color: rgba(0, 0, 0, 0.3); }
   .header-area .banner {
     color: white; }
-    .header-area .banner .h1 {
-      font-size: 4.5rem;
-      font-weight: bold;
-      letter-spacing: 5px;
-      text-shadow: 2px 2px 5px black; }
-    .header-area .banner .lead {
-      line-height: 1.5;
-      font-size: 1.5rem; }
-    .header-area .banner .see-more {
-      padding: 10px 20px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      background-color: transparent;
-      color: white;
-      border: 1px solid;
-      border-radius: 5px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      .header-area .banner .see-more:hover {
-        background-color: white;
-        color: black;
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-        border: none; }
+    .header-area .banner .banner-info {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 0 0 10px 10px;
+      -webkit-box-shadow: 2px 2px 5px black;
+              box-shadow: 2px 2px 5px black; }
+      .header-area .banner .banner-info .h1 {
+        font-size: 3.5rem;
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 5px black; }
+      .header-area .banner .banner-info .typed-area .typing {
+        display: inline-block;
+        font-size: 2rem;
+        color: var(--warning);
+        font-family: "Lemon", cursive; }
+      .header-area .banner .banner-info .icons a {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px; }
+        .header-area .banner .banner-info .icons a i:hover {
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          color: var(--warning);
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2); }
+      .header-area .banner .banner-info .see-more {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: transparent;
+        color: white;
+        border: 1px solid;
+        border-radius: 5px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .header-area .banner .banner-info .see-more:hover {
+          background-color: white;
+          color: black;
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1);
+          border: none; }
 
 /*# sourceMappingURL=main.css.map */

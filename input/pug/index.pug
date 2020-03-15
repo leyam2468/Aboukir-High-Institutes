@@ -14,17 +14,29 @@ html(lang="en")
             //-Header Page
             include helper/header
             //-banner
+            
+
             .banner
                 .container
                     .row
-                        .col-sm-6.py-5
+                        .col-sm-6.py-5.banner-info.text-center
                             h2.h1 Aboukir High Institutes
-                            p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nesciunt fuga omnis voluptatum doloremque eum.
+                            .typed-area
+                                h2(class="typing") 
+                            .icons.my-3
+                                a(href="#", title="title") 
+                                    i.fab.fa-facebook.fa-3x
+                                a(href="#", title="title") 
+                                    i.fab.fa-instagram.fa-3x
+                                a(href="#", title="title")
+                                    i.fab.fa-twitter.fa-3x
+                                    
                             button(class="see-more") See More
 
-
+            
 
 
         //-My Scripts File
         include helper/script
-        
+            
+            
