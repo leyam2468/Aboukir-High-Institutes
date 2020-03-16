@@ -20,7 +20,7 @@
       <div class="overlay"></div>
       <div class="navbar-area">
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container"><a class="navbar-brand" href="#" title="title"><img class="logo" src="img/logo-home.png" alt=""/></a>
+          <div class="container"><a class="navbar-brand" href="index.html" title="title"><img class="logo" src="img/logo-home.png" alt=""/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
@@ -39,15 +39,15 @@
           </div>
         </nav>
       </div>
-      <div class="d-none d-md-block" aria-live="polite" aria-atomic="true" style="position: relative;">
-        <div style="position: absolute; top: 10px; right: 10px;">
-          <div class="toast" data-animation="true" data-autohide="true" data-delay="5000" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="notification d-none d-md-block" aria-live="polite" aria-atomic="true" style="position: relative;">
+        <div style="position: fixed; top: 10px; right: 10px;">
+          <div class="toast" data-animation="true" data-autohide="true" data-delay="8000" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header"><strong class="mr-auto text-primary">Axel</strong><small class="text-muted">1 m</small>
               <button class="ml-2 mb-1 close" type="button" data-dismiss="toast">&times;</button>
             </div>
             <div class="toast-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, nobis?</div>
           </div>
-          <div class="toast" data-animation="true" data-autohide="true" data-delay="6000" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast" data-animation="true" data-autohide="true" data-delay="10000" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header"><strong class="mr-auto text-primary">Axel</strong><small class="text-muted">1 m</small>
               <button class="ml-2 mb-1 close" type="button" data-dismiss="toast">&times;</button>
             </div>
@@ -55,16 +55,30 @@
           </div>
         </div>
       </div>
+      <div class="fixed-area d-none d-md-block">
+        <div class="social facebook"><a href="#" title="title"> 
+            <p>Like on Facebook<i class="fab fa-facebook fa-3x"></i></p></a></div>
+        <div class="social instagram"><a href="#" title="title"> 
+            <p>Like on Instagram<i class="fab fa-instagram fa-3x"></i></p></a></div>
+        <div class="social twitter"><a href="#" title="title"> 
+            <p> Like Us on twitter<i class="fab fa-twitter fa-3x"></i></p></a></div>
+      </div>
+      <div class="shape" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+          <path class="shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+          <path class="shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+          <path class="shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+        </svg>
+      </div>
       <div class="banner">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6 py-5 banner-info text-center">
+          <div class="row justify-content-center align-items-center">
+            <div class="col py-5 banner-info text-center">
               <h2 class="h1">Aboukir High Institutes</h2>
               <div class="typed-area">
                 <h2 class="typing"> </h2>
               </div>
-              <div class="icons my-3"><a href="#" title="facebook"> <i class="fab fa-facebook fa-3x"></i></a><a href="#" title="title"> <i class="fab fa-instagram fa-3x"></i></a><a href="#" title="title"><i class="fab fa-twitter fa-3x"></i></a></div>
-              <button class="see-more">See More</button>
+              <div class="icons my-3 d-md-none"><a href="#" title="facebook"> <i class="fab fa-facebook fa-3x"></i></a><a href="#" title="title"> <i class="fab fa-instagram fa-3x"></i></a><a href="#" title="title"><i class="fab fa-twitter fa-3x"></i></a></div>
             </div>
           </div>
         </div>
