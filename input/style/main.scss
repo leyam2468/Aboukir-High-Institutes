@@ -15,12 +15,7 @@
     position: relative;
     overflow: hidden;
     //-overlay area
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.35);
-    }
+
     //-page-Notification
     .notification {
         z-index: 9999;
@@ -46,6 +41,7 @@
         height: 250px;
         width: 10px;
         position: fixed;
+        top: 25%;
         text-align: center;
         padding: 10px;
         margin-left: 10px;
@@ -127,9 +123,16 @@
     //-banner area
     .banner {
         color: white;
-
+        width: 100%;
+        height: 100%;
         //-Bainner Info area
         .banner-info {
+            display: flex;
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
             .h1 {
                 font-size: 3.5rem;
                 font-family: $font-three;
@@ -138,6 +141,7 @@
                 text-shadow: 2px 2px 5px black;
             }
             .typed-area {
+                display: block;
                 .typing {
                     display: inline-block;
                     font-size: 2rem;
@@ -157,22 +161,7 @@
                     }
                 }
             }
-            .see-more {
-                padding: 8px 20px;
-                font-size: 1.5rem;
-                font-weight: bold;
-                background-color: transparent;
-                color: white;
-                border: 1px solid ;
-                border-radius: 4px;
-                transition: all 0.5s ease;
-                &:hover {
-                    background-color: white;
-                    color: black;
-                    transform: scale(1.1);
-                    border: none;
-                }
-            }
+            
         }
     }
 }

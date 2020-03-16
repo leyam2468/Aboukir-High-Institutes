@@ -47,11 +47,6 @@ body {
   background-position: center;
   position: relative;
   overflow: hidden; }
-  .header-area .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.35); }
   .header-area .notification {
     z-index: 9999; }
     .header-area .notification .toast {
@@ -70,6 +65,7 @@ body {
     height: 250px;
     width: 10px;
     position: fixed;
+    top: 25%;
     text-align: center;
     padding: 10px;
     margin-left: 10px; }
@@ -139,43 +135,47 @@ body {
       .header-area .shape svg .shape-fill {
         fill: #fff; }
   .header-area .banner {
-    color: white; }
-    .header-area .banner .banner-info .h1 {
-      font-size: 3.5rem;
-      font-family: "Dancing Script", cursive;
-      font-weight: bold;
-      letter-spacing: 5px;
-      text-shadow: 2px 2px 5px black; }
-    .header-area .banner .banner-info .typed-area .typing {
-      display: inline-block;
-      font-size: 2rem;
-      color: var(--warning);
-      font-family: "Lemon", cursive; }
-    .header-area .banner .banner-info .icons a {
-      text-decoration: none;
-      color: white;
-      margin: 0 10px; }
-      .header-area .banner .banner-info .icons a i:hover {
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        color: var(--warning);
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2); }
-    .header-area .banner .banner-info .see-more {
-      padding: 8px 20px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      background-color: transparent;
-      color: white;
-      border: 1px solid;
-      border-radius: 4px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      .header-area .banner .banner-info .see-more:hover {
-        background-color: white;
-        color: black;
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-        border: none; }
+    color: white;
+    width: 100%;
+    height: 100%; }
+    .header-area .banner .banner-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 80vh;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: auto; }
+      .header-area .banner .banner-info .h1 {
+        font-size: 3.5rem;
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 5px black; }
+      .header-area .banner .banner-info .typed-area {
+        display: block; }
+        .header-area .banner .banner-info .typed-area .typing {
+          display: inline-block;
+          font-size: 2rem;
+          color: var(--warning);
+          font-family: "Lemon", cursive; }
+      .header-area .banner .banner-info .icons a {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px; }
+        .header-area .banner .banner-info .icons a i:hover {
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          color: var(--warning);
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2); }
 
 /*# sourceMappingURL=main.css.map */
