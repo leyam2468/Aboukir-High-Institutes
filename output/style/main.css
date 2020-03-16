@@ -79,7 +79,7 @@ body {
       padding: 0;
       display: inline-table;
       height: 0px;
-      background-color: rgba(128, 128, 128, 0.73);
+      background-color: rgba(0, 0, 0, 0.513);
       -webkit-transition-property: margin-left;
       transition-property: margin-left;
       -webkit-transition-duration: 0.2s;
@@ -115,6 +115,10 @@ body {
       background-color: #e4405f; }
     .header-area .fixed-area .twitter:hover {
       background-color: #4099FF; }
+    .header-area .fixed-area .youtube:hover {
+      background-color: #E52D27; }
+    .header-area .fixed-area .google-plus:hover {
+      background-color: #DD4B39; }
   .header-area .shape {
     overflow: hidden;
     position: absolute;

@@ -55,7 +55,7 @@
             padding: 0;
             display: inline-table;
             height: 0px;
-            background-color: rgba(128, 128, 128, 0.73);
+            background-color: rgba(0, 0, 0, 0.513);
             transition-property: margin-left;
             transition-duration: 0.2s;
             transition-delay: 0.2s; 
@@ -95,6 +95,12 @@
         }
         .twitter:hover {
             background-color: #4099FF;
+        }
+        .youtube:hover {
+            background-color: #E52D27;
+        }
+        .google-plus:hover {
+            background-color: #DD4B39;
         }
     }
     //-shaper area
