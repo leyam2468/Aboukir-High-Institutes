@@ -47,16 +47,6 @@ body {
   background-position: center;
   position: relative;
   overflow: hidden; }
-  .header-area::after {
-    content: '\f063';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--warning);
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    cursor: pointer; }
   .header-area .notification {
     z-index: 9999; }
     .header-area .notification .toast {
@@ -124,6 +114,55 @@ body {
     .header-area .fixed-area .youtube:hover {
       background-color: #E52D27; }
     .header-area .fixed-area .google-plus:hover {
+      background-color: #DD4B39; }
+  .header-area .fixed-area2 {
+    z-index: 9999;
+    width: 50px;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    text-align: center; }
+    .header-area .fixed-area2 .social {
+      width: 250px;
+      margin-right: -200px;
+      background-color: rgba(0, 0, 0, 0.513);
+      -webkit-transition: all 200ms ease;
+      transition: all 200ms ease;
+      -webkit-box-shadow: 0px 0px 6px 0px #3E3D3D;
+              box-shadow: 0px 0px 6px 0px #3E3D3D;
+      cursor: pointer; }
+      .header-area .fixed-area2 .social a {
+        text-decoration: none;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 3;
+        color: white;
+        display: inline-table; }
+        .header-area .fixed-area2 .social a i {
+          display: inline;
+          right: 35px;
+          position: relative;
+          vertical-align: middle;
+          text-align: center;
+          font-size: 2rem; }
+        .header-area .fixed-area2 .social a p {
+          display: inline-block;
+          color: white;
+          position: relative;
+          left: -10px;
+          font-family: 'Lato'; }
+      .header-area .fixed-area2 .social:hover {
+        margin-left: -200px;
+        background-color: #3b5998; }
+    .header-area .fixed-area2 .align-center:hover {
+      background-color: #3b5998; }
+    .header-area .fixed-area2 .university:hover {
+      background-color: #e4405f; }
+    .header-area .fixed-area2 .edit:hover {
+      background-color: #4099FF; }
+    .header-area .fixed-area2 .list-ul:hover {
+      background-color: #E52D27; }
+    .header-area .fixed-area2 .book:hover {
       background-color: #DD4B39; }
   .header-area .shape {
     overflow: hidden;
