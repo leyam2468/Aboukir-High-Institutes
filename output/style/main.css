@@ -7,18 +7,25 @@ body {
 
 .navbar-area .navbar {
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 10px 10px;
   -webkit-box-shadow: 2px 2px 5px black;
           box-shadow: 2px 2px 5px black;
   padding: 0 10px;
   z-index: 1; }
   .navbar-area .navbar .navbar-brand {
-    padding: 0; }
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive; }
     .navbar-area .navbar .navbar-brand img.logo {
       width: 70px; }
   .navbar-area .navbar .navbar-toggler {
-    border-color: white;
+    padding: 0;
+    border: none;
     outline: none; }
+    .navbar-area .navbar .navbar-toggler svg {
+      width: 40px; }
   .navbar-area .navbar .navbar-nav li.nav-item {
     margin: 0 10px; }
     .navbar-area .navbar .navbar-nav li.nav-item a {
@@ -35,9 +42,99 @@ body {
       width: 100%;
       height: 3px;
       background-color: var(--warning); }
-  .navbar-area .navbar .dropdown .btn-secondary {
-    background-color: transparent;
-    border-color: transparent; }
+  .navbar-area .navbar .login-butto-nav .trigger-btn {
+    display: inline-block;
+    margin: 5px auto;
+    background-color: var(--warning);
+    border-radius: 10px 20px;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: bold; }
+  .navbar-area .navbar .login-butto-nav .trigger-btn:hover {
+    color: #524a00;
+    text-decoration: none; }
+  .navbar-area .navbar .modal-login {
+    width: 350px; }
+    .navbar-area .navbar .modal-login .modal-content {
+      padding: 20px;
+      border-radius: 5px;
+      border: none;
+      color: #999;
+      border-radius: 1px;
+      margin-bottom: 15px;
+      background: #fff;
+      border: 1px solid #f3f3f3;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+              box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 25px; }
+      .navbar-area .navbar .modal-login .modal-content .modal-header {
+        border-bottom: none;
+        position: relative;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .navbar-area .navbar .modal-login .modal-content .modal-header h4 {
+          color: #636363;
+          text-align: center;
+          font-size: 26px;
+          margin-top: 0; }
+        .navbar-area .navbar .modal-login .modal-content .modal-header .close {
+          position: absolute;
+          top: -10px;
+          right: -10px; }
+      .navbar-area .navbar .modal-login .modal-content .modal-body .form-group {
+        margin-bottom: 20px; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .input-group-addon {
+          max-width: 42px;
+          text-align: center;
+          background: none;
+          border-width: 0 0 1px 0;
+          padding-left: 5px;
+          border-radius: 0; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .form-control {
+          min-height: 38px;
+          padding-left: 5px;
+          -webkit-box-shadow: none !important;
+                  box-shadow: none !important;
+          border-width: 0 0 1px 0;
+          border-radius: 0; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .form-control:focus {
+          border-color: #ccc; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .btn {
+          font-size: 16px;
+          font-weight: bold;
+          background: var(--warning);
+          border-radius: 3px;
+          border: none;
+          min-width: 140px;
+          outline: none !important; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .btn:hover, .navbar-area .navbar .modal-login .modal-content .modal-body .form-group .btn:focus {
+          background: #179b81; }
+      .navbar-area .navbar .modal-login .modal-content .modal-body .hint-text {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 13px; }
+        .navbar-area .navbar .modal-login .modal-content .modal-body .hint-text a {
+          color: black; }
+      .navbar-area .navbar .modal-login .modal-content .modal-footer {
+        color: #999;
+        border-color: #dee4e7;
+        text-align: center;
+        margin: 0 -25px -25px;
+        font-size: 13px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .navbar-area .navbar .modal-login .modal-content .modal-footer a {
+          color: #000;
+          text-decoration: underline; }
+        .navbar-area .navbar .modal-login .modal-content .modal-footer a:hover {
+          text-decoration: none; }
+        .navbar-area .navbar .modal-login .modal-content .modal-footer .fa {
+          font-size: 21px; }
+
+.modal-backdrop {
+  z-index: 0 !important; }
 
 .header-area {
   width: 100%;
@@ -48,7 +145,8 @@ body {
   position: relative;
   overflow: hidden; }
   .header-area .notification {
-    z-index: 9999; }
+    z-index: 9999;
+    top: 0; }
     .header-area .notification .toast {
       -webkit-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
@@ -64,8 +162,8 @@ body {
     z-index: 9999;
     height: 250px;
     width: 10px;
-    position: fixed;
-    top: 25%;
+    position: relative;
+    top: 0%;
     text-align: center;
     padding: 10px;
     margin-left: 10px; }
@@ -115,55 +213,6 @@ body {
       background-color: #E52D27; }
     .header-area .fixed-area .google-plus:hover {
       background-color: #DD4B39; }
-  .header-area .fixed-area2 {
-    z-index: 9999;
-    width: 50px;
-    position: fixed;
-    top: 25%;
-    right: 0;
-    text-align: center; }
-    .header-area .fixed-area2 .social {
-      width: 250px;
-      margin-right: -200px;
-      background-color: rgba(0, 0, 0, 0.513);
-      -webkit-transition: all 200ms ease;
-      transition: all 200ms ease;
-      -webkit-box-shadow: 0px 0px 6px 0px #3E3D3D;
-              box-shadow: 0px 0px 6px 0px #3E3D3D;
-      cursor: pointer; }
-      .header-area .fixed-area2 .social a {
-        text-decoration: none;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 3;
-        color: white;
-        display: inline-table; }
-        .header-area .fixed-area2 .social a i {
-          display: inline;
-          right: 35px;
-          position: relative;
-          vertical-align: middle;
-          text-align: center;
-          font-size: 2rem; }
-        .header-area .fixed-area2 .social a p {
-          display: inline-block;
-          color: white;
-          position: relative;
-          left: -10px;
-          font-family: 'Lato'; }
-      .header-area .fixed-area2 .social:hover {
-        margin-left: -200px;
-        background-color: #3b5998; }
-    .header-area .fixed-area2 .align-center:hover {
-      background-color: #3b5998; }
-    .header-area .fixed-area2 .university:hover {
-      background-color: #e4405f; }
-    .header-area .fixed-area2 .edit:hover {
-      background-color: #4099FF; }
-    .header-area .fixed-area2 .list-ul:hover {
-      background-color: #E52D27; }
-    .header-area .fixed-area2 .book:hover {
-      background-color: #DD4B39; }
   .header-area .shape {
     overflow: hidden;
     position: absolute;
@@ -184,14 +233,14 @@ body {
       .header-area .shape svg .shape-fill {
         fill: #fff; }
   .header-area .banner {
+    position: absolute;
+    top: 15%;
     color: white;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
     .header-area .banner .banner-info {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 80vh;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;

@@ -7,6 +7,25 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
+        div(id="fb-root")
+        script.
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml:true,version:'v6.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        
+
+        div( class="fb-customerchat" attribution=setup_tool page_id="1608351572767307" theme_color="#0084ff")
 
         //-banner Area
         .header-area
@@ -15,16 +34,16 @@ html(lang="en")
             //-Header Page
             include helper/header
             //-notification--area
-            div(class="notification d-none d-md-block" aria-live="polite" aria-atomic="true" style="position: relative;")
-                    div(style="position: fixed; top: 60px; right: 10px;")
+            div(class="notification " aria-live="polite" aria-atomic="true" style="position: relative;")
+                    div(style="position: fixed; right: 10px;")
                         div(class="toast" data-animation="true" data-autohide="true" data-delay="8000" role="alert" aria-live="assertive" aria-atomic="true")
                             div(class="toast-header")
-                                strong(class="mr-auto text-primary") Notification
+                                strong(class="mr-auto text-primary") #[i.fab.fa-facebook] Notification
                                 small(class="text-muted") 1 m
                                 button(type="button" class="ml-2 mb-1 close" data-dismiss="toast") &times;
-                            div(class="toast-body") This Website is ander Design Please wit and if you can help call me
+                            div(class="toast-body")   هذا الموقع تحت الصيانة من فضلك الانتظار حتا اكتمال الموقع من التصميم 
             //-Fixed-area-banner
-            div(class="fixed-area")
+            div(class="fixed-area d-none d-md-block")
             
                 div.social.facebook
                     a(href="#", title="title") 
@@ -46,43 +65,25 @@ html(lang="en")
                         p  Like Us on youtube
                             i.fab.fa-youtube.fa-3x
 
-                div.social.google-plus
-                    a(href="#", title="title") 
-                        p  Like on google plus
-                            i.fab.fa-google-plus.fa-3x
-
-
-
-            div(class="fixed-area2")
-            
-                div.social.align-center
-                    a(href="#", title="title") 
-                        i.fa.fa-align-center.fa-3x
-                        p تسجيل دخول الطلاب
-
                 div.social.university
                     a(href="#", title="title") 
-                        i.fa.fa-university.fa-3x
-                        p الدراسة فى الجامعة
-                            
+                        p  الدراسة فى الجامعة
+                            i.fa.fa-university.fa-3x
+
+                div.social.align-center
+                    a(href="#", title="title") 
+                        p  مراكز الجامع
+                            i.fa.fa-list-ul.fa-3x.ml-5
 
                 div.social.edit
                     a(href="#", title="title") 
-                        i.fa.fa-edit.fa-3x.mr-4
                         p الأبحاث العلمية 
-                            
-
-                div.social.list-ul
-                    a(href="#", title="title") 
-                        i.fa.fa-list-ul.fa-3x.mr-5
-                        p  مراكز الجامع
-                            
-
+                            i.fa.fa-edit.fa-3x.ml-4
+                        
                 div.social.book
                     a(href="#", title="title") 
-                        i.fa.fa-book.fa-3x.mr-3
                         p التعليم الإلكترونى
-                            
+                            i.fa.fa-book.fa-3x.ml-2
             //-shaper Area
             div(class="shape")
                 svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none")
@@ -93,6 +94,7 @@ html(lang="en")
             div(class="banner")
                 .container
                     .banner-info.text-center
+                        img(src="img/logo-home.png", alt="")
                         h2.h1 Aboukir High Institute
                         .typed-area
                             h2(class="typing")

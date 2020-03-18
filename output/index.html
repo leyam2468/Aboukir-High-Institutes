@@ -16,14 +16,34 @@
     <title>Aboukir High Institutes</title>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+          xfbml:true,version:'v6.0'
+          });
+      };
+      
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+      
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+      
+    </script>
+    <div class="fb-customerchat" page_id="1608351572767307" theme_color="#0084ff"></div>
     <div class="header-area">
       <div class="overlay"></div>
       <div class="navbar-area">
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container"><a class="navbar-brand" href="index.html" title="title"><img class="logo" src="img/logo-home.png" alt=""/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="container"><a class="navbar-brand" href="index.html" title="title">Aboukir High Institutes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="64" height="64"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" fill="#f1c40f"></path><path d="M134.54297,78.60938h-75.75391c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h75.75391c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937zM45.51953,78.60938h-8.0625c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h8.0625c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937zM134.54297,55.42969h-75.75391c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h75.75391c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937zM45.51953,55.42969h-8.0625c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h8.0625c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937z" fill="#ffffff"></path><g fill="#ffffff"><path d="M134.54297,101.78906h-75.75391c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h75.75391c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937zM45.51953,101.78906h-8.0625c-1.84766,0 -3.35937,1.51172 -3.35937,3.35938v8.0625c0,1.84766 1.51172,3.35938 3.35938,3.35938h8.0625c1.84766,0 3.35938,-1.51172 3.35938,-3.35937v-8.0625c0,-1.84766 -1.51172,-3.35937 -3.35937,-3.35937z"></path></g></g></g></svg></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav mx-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only"></span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
@@ -32,24 +52,50 @@
                 <li class="nav-item"><a class="nav-link" href="#">Archaeology</a></li>
               </ul>
             </div>
-            <div class="dropdown d-none d-md-block">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-cogs"></i></button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">#1</a><a class="dropdown-item" href="#">#1</a><a class="dropdown-item" href="#">#1</a></div>
+            <div class="login-butto-nav text-center"><a class="trigger-btn" href="#myModal" data-toggle="modal">Login</a></div>
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                      <div class="form-group">
+                        <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                          <input class="form-control" type="text" name="username" placeholder="Username" required="required"/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span>
+                          <input class="form-control" type="text" name="password" placeholder="Password" required="required"/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary btn-block btn-lg" type="submit">Sign In</button>
+                      </div>
+                      <p class="hint-text"><a href="#" title="title">Forgot Password?</a></p>
+                    </form>
+                  </div>
+                  <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
       </div>
-      <div class="notification d-none d-md-block" aria-live="polite" aria-atomic="true" style="position: relative;">
-        <div style="position: fixed; top: 60px; right: 10px;">
+      <div class="notification " aria-live="polite" aria-atomic="true" style="position: relative;">
+        <div style="position: fixed; right: 10px;">
           <div class="toast" data-animation="true" data-autohide="true" data-delay="8000" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header"><strong class="mr-auto text-primary">Notification</strong><small class="text-muted">1 m</small>
+            <div class="toast-header"><strong class="mr-auto text-primary"><i class="fab fa-facebook"></i> Notification</strong><small class="text-muted">1 m</small>
               <button class="ml-2 mb-1 close" type="button" data-dismiss="toast">&times;</button>
             </div>
-            <div class="toast-body">This Website is ander Design Please wit and if you can help call me</div>
+            <div class="toast-body">  هذا الموقع تحت الصيانة من فضلك الانتظار حتا اكتمال الموقع من التصميم </div>
           </div>
         </div>
       </div>
-      <div class="fixed-area">
+      <div class="fixed-area d-none d-md-block">
         <div class="social facebook"><a href="#" title="title"> 
             <p>Like on Facebook<i class="fab fa-facebook fa-3x"></i></p></a></div>
         <div class="social instagram"><a href="#" title="title"> 
@@ -58,20 +104,14 @@
             <p> Like Us on twitter<i class="fab fa-twitter fa-3x"></i></p></a></div>
         <div class="social youtube"><a href="#" title="title"> 
             <p> Like Us on youtube<i class="fab fa-youtube fa-3x"></i></p></a></div>
-        <div class="social google-plus"><a href="#" title="title"> 
-            <p> Like on google plus<i class="fab fa-google-plus fa-3x"></i></p></a></div>
-      </div>
-      <div class="fixed-area2">
-        <div class="social align-center"><a href="#" title="title"> <i class="fa fa-align-center fa-3x"></i>
-            <p>تسجيل دخول الطلاب</p></a></div>
-        <div class="social university"><a href="#" title="title"> <i class="fa fa-university fa-3x"></i>
-            <p>الدراسة فى الجامعة</p></a></div>
-        <div class="social edit"><a href="#" title="title"> <i class="fa fa-edit fa-3x mr-4"></i>
-            <p>الأبحاث العلمية </p></a></div>
-        <div class="social list-ul"><a href="#" title="title"> <i class="fa fa-list-ul fa-3x mr-5"></i>
-            <p> مراكز الجامع</p></a></div>
-        <div class="social book"><a href="#" title="title"> <i class="fa fa-book fa-3x mr-3"></i>
-            <p>التعليم الإلكترونى</p></a></div>
+        <div class="social university"><a href="#" title="title"> 
+            <p> الدراسة فى الجامعة<i class="fa fa-university fa-3x"></i></p></a></div>
+        <div class="social align-center"><a href="#" title="title"> 
+            <p> مراكز الجامع<i class="fa fa-list-ul fa-3x ml-5"></i></p></a></div>
+        <div class="social edit"><a href="#" title="title"> 
+            <p>الأبحاث العلمية <i class="fa fa-edit fa-3x ml-4"></i></p></a></div>
+        <div class="social book"><a href="#" title="title"> 
+            <p>التعليم الإلكترونى<i class="fa fa-book fa-3x ml-2"></i></p></a></div>
       </div>
       <div class="shape">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
@@ -82,7 +122,7 @@
       </div>
       <div class="banner">
         <div class="container">
-          <div class="banner-info text-center">
+          <div class="banner-info text-center"><img src="img/logo-home.png" alt=""/>
             <h2 class="h1">Aboukir High Institute</h2>
             <div class="typed-area">
               <h2 class="typing"></h2>
