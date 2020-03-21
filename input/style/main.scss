@@ -29,6 +29,7 @@
         top: 0;
         .toast {
             transition: all 1s ease-in-out;
+            font-family: $font-ar;
             .toast-header {
                 background-color: black;
                 .text-primary {
@@ -132,7 +133,7 @@
     //-banner area
     .banner {
         position: absolute;
-        top: 15%;
+        top: 10%;
         color: white;
         width: 100%;
         //-Bainner Info area
@@ -150,6 +151,13 @@
                 letter-spacing: 5px;
                 text-shadow: 2px 2px 5px black;
             }
+            .h3 {
+                font-family: $font-ar;
+                font-size: 3.5rem;
+                font-weight: bold;
+                letter-spacing: 0;
+                text-shadow: 2px 2px 5px black;
+            }
             .typed-area {
                 display: block;
                 .typing {
@@ -157,6 +165,9 @@
                     font-size: 2rem;
                     color: $color-tow;
                     font-family: $font-tow;
+                    background-color: rgba(0, 0, 0, 0.35);
+                    padding: 5px;
+                    border-radius: 8px;
                 }
             }
             .icons {
@@ -175,4 +186,39 @@
         }
     }
 }
-//-
+//-about-area
+.about-area {
+    .h1 {
+        font-size: 6.5rem;
+        font-weight: bold;
+        font-family: $font-tow;
+        letter-spacing: 4px;
+        color: rgba(0, 0, 0, 0.12);
+        letter-spacing: 5px;
+    }
+    .h3 {
+        margin-top: -90px;
+        font-size: 3rem;
+        font-family: $font-ar;
+        letter-spacing: -1px;
+    }
+    .lead {
+        font-family: $font-ar;
+        font-size: 1.5rem;
+        color: #505050;
+    }
+    .btn {
+        background-color: $color-one;
+        color: white;
+        padding: 13px 40px;
+        font-family: $font-ar;
+        box-shadow: 2px 2px 5px #3E3D3D;
+    }
+    .about-sliders {
+        .mis {
+            background-color: red;
+            min-height: 200px;
+            
+        }
+    }
+}

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,900&display=swap");
 body {
   font-family: "Roboto Condensed", sans-serif;
   height: 5000px; }
@@ -55,7 +56,8 @@ body {
     color: #524a00;
     text-decoration: none; }
   .navbar-area .navbar .modal-login {
-    width: 350px; }
+    width: 350px;
+    margin: 10% auto; }
     .navbar-area .navbar .modal-login .modal-content {
       padding: 20px;
       border-radius: 5px;
@@ -159,7 +161,8 @@ body {
     top: 0; }
     .header-area .notification .toast {
       -webkit-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      font-family: "Cairo", sans-serif; }
       .header-area .notification .toast .toast-header {
         background-color: black; }
         .header-area .notification .toast .toast-header .text-primary {
@@ -245,7 +248,7 @@ body {
         fill: #fff; }
   .header-area .banner {
     position: absolute;
-    top: 15%;
+    top: 10%;
     color: white;
     width: 100%; }
     .header-area .banner .banner-info {
@@ -270,13 +273,22 @@ body {
         font-weight: bold;
         letter-spacing: 5px;
         text-shadow: 2px 2px 5px black; }
+      .header-area .banner .banner-info .h3 {
+        font-family: "Cairo", sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: 0;
+        text-shadow: 2px 2px 5px black; }
       .header-area .banner .banner-info .typed-area {
         display: block; }
         .header-area .banner .banner-info .typed-area .typing {
           display: inline-block;
           font-size: 2rem;
           color: var(--warning);
-          font-family: "Lemon", cursive; }
+          font-family: "Lemon", cursive;
+          background-color: rgba(0, 0, 0, 0.35);
+          padding: 5px;
+          border-radius: 8px; }
       .header-area .banner .banner-info .icons a {
         text-decoration: none;
         color: white;
@@ -287,5 +299,36 @@ body {
           color: var(--warning);
           -webkit-transform: scale(1.2);
                   transform: scale(1.2); }
+
+.about-area .h1 {
+  font-size: 6.5rem;
+  font-weight: bold;
+  font-family: "Lemon", cursive;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.12);
+  letter-spacing: 5px; }
+
+.about-area .h3 {
+  margin-top: -90px;
+  font-size: 3rem;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: -1px; }
+
+.about-area .lead {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.5rem;
+  color: #505050; }
+
+.about-area .btn {
+  background-color: #216f05;
+  color: white;
+  padding: 13px 40px;
+  font-family: "Cairo", sans-serif;
+  -webkit-box-shadow: 2px 2px 5px #3E3D3D;
+          box-shadow: 2px 2px 5px #3E3D3D; }
+
+.about-area .about-sliders .mis {
+  background-color: red;
+  min-height: 200px; }
 
 /*# sourceMappingURL=main.css.map */

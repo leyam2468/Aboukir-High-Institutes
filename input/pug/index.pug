@@ -7,6 +7,7 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
+        //--facebook chat
         div(id="fb-root")
         script.
             window.fbAsyncInit = function() {
@@ -94,6 +95,7 @@ html(lang="en")
                     .banner-info.text-center
                         img(src="img/logo-home.png", alt="")
                         h2.h1 Aboukir High Institute
+                        h2.h3 معاهد ابو قير العليا
                         .typed-area
                             h2(class="typing")
                             
@@ -105,6 +107,22 @@ html(lang="en")
                             a(href="#", title="title")
                                 i.fab.fa-twitter.fa-3x
         
+        //-about area
+        .about-area.text-center
+            .container
+                h2.h1 About Us
+                h2.h3 نبذة عن معهد ابو قير العالي
+                p.lead.mt-4 أنُشئت معاهد أبو قير العليا في عام 1998 تمشيا مع سياسة الحكومة المصرية لتشجيع التعليم الخاص حيث أصدر المجلس الأعلى المصري للجامعات والمعاهد الخاصة رخصتها والتي تعتبر صالحة اعتبارا من العام الدراسي 2000/2001 و تقدم مجموعة من البرامج التعليمية المتميزة صممت بعناية لمواكبة التغيرات و التحديات المعاصرة. فهذه البرامج تقوم بالتركيز على التطبيق العملي أثناء العملية التعليمية مما يساعد الطالب على اكتساب الأدوات اللازمة لتطوير مهاراته الفكرية و المعرفية و اعداده كخريجا متميزا قادرأ على مواكبة متطلبات سوق العمل .
+                a(href="#", title="title" class="btn") للمذيد من المعلومات
+                    i.fab.fa-wikipedia-w.fa-2x.mx-1.float-left
+                .about-sliders.my-3
+                    .row.justify-content-between
+                        .col-12.col-md-4.mis
+                            h1 test
+                        .col-12.col-md-4.mis
+                            h1 test
+                        .col-12.col-md-4.mis
+                            h1 test
         //-My Scripts File
         include helper/script
             
