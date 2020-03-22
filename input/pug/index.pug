@@ -29,7 +29,7 @@ html(lang="en")
         //-banner Area
         .header-area
             //-overlay
-            video(src="img/video-20.mp4" autoplay muted loop)
+            //video(src="img/video-20.mp4" autoplay muted loop)
             //-Header Page
             include helper/header
             //-notification--area
@@ -115,14 +115,67 @@ html(lang="en")
                 p.lead.mt-4 أنُشئت معاهد أبو قير العليا في عام 1998 تمشيا مع سياسة الحكومة المصرية لتشجيع التعليم الخاص حيث أصدر المجلس الأعلى المصري للجامعات والمعاهد الخاصة رخصتها والتي تعتبر صالحة اعتبارا من العام الدراسي 2000/2001 و تقدم مجموعة من البرامج التعليمية المتميزة صممت بعناية لمواكبة التغيرات و التحديات المعاصرة. فهذه البرامج تقوم بالتركيز على التطبيق العملي أثناء العملية التعليمية مما يساعد الطالب على اكتساب الأدوات اللازمة لتطوير مهاراته الفكرية و المعرفية و اعداده كخريجا متميزا قادرأ على مواكبة متطلبات سوق العمل .
                 a(href="#", title="title" class="btn") للمذيد من المعلومات
                     i.fab.fa-wikipedia-w.fa-2x.mx-1.float-left
+                //-slider Section
                 .about-sliders.my-3
                     .row.justify-content-between
-                        .col-12.col-md-4.mis
-                            h1 test
-                        .col-12.col-md-4.mis
-                            h1 test
-                        .col-12.col-md-4.mis
-                            h1 test
+                        //-MIS
+                        .col-12.col-md-4
+                            div(id="carouselmis" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true")
+                                ol(class="carousel-indicators")
+                                    li(data-target="#carouselmis" data-slide-to="0" class="active")
+                                    li(data-target="#carouselmis" data-slide-to="1" )
+                                    li(data-target="#carouselmis" data-slide-to="2" )
+                                div(class="carousel-inner")
+                                    div(class="carousel-item active" style="background-image: url(img/mis-1.jpg);")
+                                        div.carousel-body.d-block
+                                            h2.h4 المعهد العالي للحاسب الآلي ونظم المعلومات
+                                            p.lead يمنح درجة البكالوريوس في نظم المعلومات الإدارية بقرار الانشاء رقم  1434 في 10/9/200 وقرار المعادلة الصادر من المجلس الأعلي للجامعات رقم 244 في 22/9/2013 بمعادلة درجة البكالوريوس في شعبه نظم المعلومات الادارية التي يمنحها المعهد
+                                            a(href="#", title="title" class="btn") Read More 
+                                    div(class="carousel-item " style="background-image: url(img/mis-2.jpg);")
+                                        div.carousel-body.d-block
+                                            
+                                    div(class="carousel-item " style="background-image: url(img/mis-3.jpg);")
+                                        div.carousel-body.d-block
+                                            
+                        //-Hotel
+                        .col-12.col-md-4
+                            div(id="carouselhotel" class="carousel slide carousel-fade" data-ride="carousel")
+                                ol(class="carousel-indicators")
+                                    li(data-target="#carouselhotel" data-slide-to="0" class="active")
+                                    li(data-target="#carouselhotel" data-slide-to="1" )
+                                    li(data-target="#carouselhotel" data-slide-to="2" )
+                                div(class="carousel-inner")
+                                    div(class="carousel-item active" style="background-image: url(img/hotel-1.jpg);")
+                                        div.carousel-body.d-block
+                                            h2.h4 المعهد العالي للسياحة والفنادق
+                                            p(class="lead" style="font-size:1.35rem") يمنح درجة البكالوريوس في التخصصات:بكالوريوس دراسات سياحية شعبة ( إدارة الأعمال السياحية – إدارة شراكات الطيران – إدارة شركات الملاحة – إدارة الأحداث الخاصة – إدارة الأحداث الرياضية)بكالوريوس إدارة الضيافة شعبة ( إدارة الفنادق – إدارة المطاعم – إدارة خدمات الضيافة الجوية والبحرية – إدارة فنون الطهي – إدارة خدمة العملاء – إدارة الاحداث الخاصة )
+                                            a(href="#", title="title" class="btn") Read More 
+                                    div(class="carousel-item " style="background-image: url(img/hotel-2.jpg);")
+                                        div.carousel-body.d-block
+                                            
+                                    div(class="carousel-item " style="background-image: url(img/hotel-3.jpg);")
+                                        div.carousel-body.d-block
+                                            
+                        //-sti
+                        .col-12.col-md-4
+                            div(id="carouselstitus" class="carousel slide carousel-fade" data-ride="carousel")
+                                ol(class="carousel-indicators")
+                                    li(data-target="#carouselstitus" data-slide-to="0" class="active")
+                                    li(data-target="#carouselstitus" data-slide-to="1" )
+                                    li(data-target="#carouselstitus" data-slide-to="2" )
+                                div(class="carousel-inner")
+                                    div(class="carousel-item active" style="background-image: url(img/stitus-1.jpg);")
+                                        div.carousel-body.d-block
+                                            h2.h4 المعهد العالي لترميم الآثار
+                                            p(class="lead" style="font-size:1.35rem") حيث هو معهــد ترميـــم الآثار الخاص الوحيد في مصــــر يحصل الخريج علي درجة البكالوريوس في الإرشاد السياحي المعادل لدرجة بكالوريوس الارشاد السياحي التي تمنحة الجامعات المصرية بقرار المجلس الاعلي للجامعات بالقرار الوزارى رقم 201 لسنة 2009 هو تخصص دقيق ضمن تخصصات أقسام كليات الاثار فهو يهتم بدراسة مواد الأثار وصيانتها سواء كانت عضوية او غير عضوية.
+                                            a(href="#", title="title" class="btn") Read More 
+                                    div(class="carousel-item " style="background-image: url(img/stitus-2.jpg);")
+                                        div.carousel-body.d-block
+                                            
+                                    div(class="carousel-item " style="background-image: url(img/stitus-3.jpg);")
+                                        div.carousel-body.d-block
+                                            
+
         //-My Scripts File
         include helper/script
             

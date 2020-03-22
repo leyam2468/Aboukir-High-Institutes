@@ -155,7 +155,7 @@
                 font-family: $font-ar;
                 font-size: 3.5rem;
                 font-weight: bold;
-                letter-spacing: 0;
+                letter-spacing: -1px;
                 text-shadow: 2px 2px 5px black;
             }
             .typed-area {
@@ -164,7 +164,7 @@
                     display: inline-block;
                     font-size: 2rem;
                     color: $color-tow;
-                    font-family: $font-tow;
+                    font-family: $font-ar;
                     background-color: rgba(0, 0, 0, 0.35);
                     padding: 5px;
                     border-radius: 8px;
@@ -215,9 +215,48 @@
         box-shadow: 2px 2px 5px #3E3D3D;
     }
     .about-sliders {
-        .mis {
-            background-color: red;
-            min-height: 200px;
+        .col-md-4{
+            flex: 0 0 31%;
+            max-width: 31%;
+            padding: 0;
+        }
+        .carousel-indicators {
+            li {
+                background-color: $color-tow;
+            }
+        }
+        .carousel-inner {
+            height: 550px;
+            box-shadow: 5px 3px 9px #00000070;
+            border-radius: 5px;
+            .carousel-item {
+                height: 400px;
+                width: 100%;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                .carousel-body {
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    background-color: rgba(0, 0, 0, 0.35);
+                    .h4 {
+                        color: $color-tow;
+                        font-family: $font-ar;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                    .lead {
+                        color: white;
+                    }
+                    .btn {
+                        font-weight: bold;
+                        background-color: #1e7100c2;
+                    }
+                }
+            }
+            
         }
     }
 }

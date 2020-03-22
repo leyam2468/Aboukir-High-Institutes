@@ -1,11 +1,12 @@
 //-nicescrol active
-$("body").niceScroll({
+/*$("body").niceScroll({
     cursorcolor:"#ffc107",
     cursorwidth:"4px",
     zindex: "99999999",
     cursorborder:"none",
     scrollspeed: 100,
 });
+*/
 //--facebook chat active
 window.fbAsyncInit = function() {
     FB.init({
@@ -27,11 +28,11 @@ $(document).ready(function(){
 });
 //-typed area
 var typed = new Typed('.typing', {
-    strings:['Management Information Systems','Tourism and Hotels','Monument Restoration'],
+    strings:['المعهد العالي للحاسب الآلي ونظم المعلومات','المعهد العالي للسياحة والفنادق','المعهد العالي لترميم الآثار'],
     typeSpeed: 50,
-    backSpeed: 30,
+    backSpeed: 50,
     loop:true,
-    backDelay: 2500,
+    backDelay: 3500,
     showCursor:false
 });
 
