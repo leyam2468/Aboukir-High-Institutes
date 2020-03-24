@@ -7,6 +7,14 @@
     scrollspeed: 100,
 });
 */
+//-Scrollbar
+$(window).scroll(function(){
+    var scroll=$(window).scrollTop(),
+        dh=$(document).height(),
+        wh=$(window).height();
+    scrollPercent =(scroll/(dh-wh)) *100;
+    $('#scrollbar').css('height',scrollPercent+'%');
+});
 //--facebook chat active
 window.fbAsyncInit = function() {
     FB.init({

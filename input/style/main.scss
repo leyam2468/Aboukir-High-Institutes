@@ -5,6 +5,15 @@
 //-header area
 @import "helper/header";
 
+#scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to top,#ffc107,rgb(224, 201, 70));
+}
 //-banner 
 .header-area {
     width: 100%;
@@ -76,6 +85,7 @@
                     position: relative;
                     margin: 5px 0;
                     font-family: 'Lato';
+                    font-weight: bold;
                     i {
                         float: right;
                         padding: 5px 10px;
@@ -105,8 +115,17 @@
         .youtube:hover {
             background-color: #E52D27;
         }
-        .google-plus:hover {
+        .university:hover {
             background-color: #DD4B39;
+        }
+        .align-center:hover {
+            background-color: rgb(255, 208, 0);
+        }
+        .edit:hover {
+            background-color: rgb(20, 122, 51);
+        }
+        .book:hover {
+            background-color: rgb(47, 20, 122);
         }
     }
     //-shaper area
@@ -210,7 +229,9 @@
     .btn {
         background-color: $color-one;
         color: white;
-        padding: 13px 40px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 11px 20px;
         font-family: $font-ar;
         box-shadow: 2px 2px 5px #3E3D3D;
     }
