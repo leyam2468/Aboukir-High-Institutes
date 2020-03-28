@@ -158,7 +158,7 @@ body {
   right: 0;
   width: 6px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffc107), to(#e0c946));
   background: linear-gradient(to top, #ffc107, #e0c946); }
 
