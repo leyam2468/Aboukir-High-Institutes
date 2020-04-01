@@ -7,27 +7,6 @@ html(lang="en")
         include helper/link
         title Aboukir High Institutes
     body
-        //-Scrollbar
-        div(id="scrollbar")
-        //--facebook chat
-        div(id="fb-root")
-        script.
-            window.fbAsyncInit = function() {
-                FB.init({
-                xfbml:true,version:'v6.0'
-                });
-            };
-
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        
-        div( class="fb-customerchat" attribution=setup_tool page_id="1608351572767307" theme_color="#0084ff")
         //-banner Area
         .header-area
             //-overlay
@@ -176,7 +155,33 @@ html(lang="en")
                                             
                                     div(class="carousel-item " style="background-image: url(img/stitus-3.jpg);")
                                         div.carousel-body.d-block
+        
+        
+        
+        //-Global Sections-------------------------------------
+        //-Scrollbar
+        div(class="scrollbar")
+        //--facebook chat
+        div(id="fb-root")
+        script.
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml:true,version:'v6.0'
+                });
+            };
 
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        div( class="fb-customerchat" attribution=setup_tool page_id="1608351572767307" theme_color="#0084ff")
+        //-slide to top
+        div.slideToTop
+            i.fas.fa-chevron-up.fa-3x
         //-My Scripts File
         include helper/script
             

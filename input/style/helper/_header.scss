@@ -3,6 +3,8 @@
         background-color: rgba(0, 0, 0, 0.4);
         box-shadow: 2px 2px 5px black;
         padding: 0 10px;
+        display: block;
+        width: 100%;
         z-index: 1;
         //-nav bar name % img
         .navbar-brand {
@@ -162,6 +164,7 @@
             }
             
         }
+
     }
 }
 .modal-backdrop {

@@ -7,14 +7,7 @@
     scrollspeed: 100,
 });
 */
-//-Scrollbar
-$(window).scroll(function(){
-    var scroll=$(window).scrollTop(),
-        dh=$(document).height(),
-        wh=$(window).height();
-    scrollPercent =(scroll/(dh-wh)) *100;
-    $('#scrollbar').css('height',scrollPercent+'%');
-});
+
 //--facebook chat active
 window.fbAsyncInit = function() {
     FB.init({
@@ -44,3 +37,55 @@ var typed = new Typed('.typing', {
     showCursor:false
 });
 
+
+
+
+//-On Windou Scrolling do-------------
+$(window).scroll(function(){
+
+    //-Scrolling bar
+    var scroll=$(window).scrollTop(),
+        dh=$(document).height(),
+        wh=$(window).height();
+    scrollPercent =(scroll/(dh-wh)) *100;
+    $('.scrollbar').css('height',scrollPercent+'%');
+
+    //-fadeIn And Our => slideToTop
+    var slideToTop = $('.slideToTop');
+    if($(window).scrollTop() >= 1000){
+        if(slideToTop.is(':hidden')){
+            $('.slideToTop').fadeIn(400);
+        };
+    }else {
+        $('.slideToTop').fadeOut(400);
+    };
+    
+    //-Nav Bar Fixed
+    if($(window).scrollTop() >= 500){
+        $('.navbar').css({
+            "position":"fixed",
+            "z-index":"9998",
+            "background-color":"rgba(0, 0, 0, 0.486)",
+        });
+    }else {
+        $('.navbar').css({
+            "position":"static",
+        });
+    }
+});
+
+
+        
+
+
+
+
+
+$('.slideToTop').click(function(e){
+    //-stop def
+    e.preventDefault();
+    //-make animate
+    $('html,body').animate({
+        scrollTop : 0
+    },1000);
+});

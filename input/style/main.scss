@@ -5,15 +5,7 @@
 //-header area
 @import "helper/header";
 
-#scrollbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 6px; 
-    height: 100%;
-    border-radius: 15px;
-    background: linear-gradient(to top,#ffc107,rgb(224, 201, 70));
-}
+
 //-banner 
 .header-area {
     width: 100%;
@@ -34,8 +26,7 @@
     }
     //-page-Notification
     .notification {
-        z-index: 9999;
-        top: 0;
+        z-index: 9998;
         .toast {
             transition: all 1s ease-in-out;
             font-family: $font-ar;
@@ -55,20 +46,20 @@
     }
     //-fixed-area-icons
     .fixed-area {
-        z-index: 9999;
-        height: 250px;
+        z-index: 9997;
         width: 10px;
+        height: 400px;
         position: relative;
-        top: 0;
+        top: 40%;
         text-align: center;
         padding: 10px;
-        margin:auto 0 auto 10px;
+        margin:-200px 0 auto 10px;
         .social {
             margin-left: -200px;
             width: 230px;
+            height: 50px;
             padding: 0;
             display: inline-table;
-            height: 0px;
             background-color: rgba(0, 0, 0, 0.513);
             transition-property: margin-left;
             transition-duration: 0.2s;
@@ -151,8 +142,10 @@
     }
     //-banner area
     .banner {
+        height: 400px;
         position: absolute;
-        top: 10%;
+        top: 50%;
+        margin-top: -200px;
         color: white;
         width: 100%;
         //-Bainner Info area
@@ -279,5 +272,40 @@
             }
             
         }
+    }
+}
+
+
+
+//-Global Sections---------------
+
+//-Scroll bar
+.scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px; 
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to top,#ffc107,rgb(224, 201, 70));
+}
+//-Slide To Top
+.slideToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: $color-tow;
+    border-radius: 5%;
+    padding:0 5px;
+    cursor: pointer;
+    z-index: 99999;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
+    i {
+        color: white;
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.513);
     }
 }
