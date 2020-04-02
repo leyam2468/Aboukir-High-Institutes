@@ -273,17 +273,58 @@
             
         }
     }
-}
-
-.sclider-test {
-    width: 100%;
-
-    div {
-        background-size: cover;
-        height:250px;
-        background-position: center;
+    .sliders-img {
+        width: 100%;
+    
+        div {
+            background-size: cover;
+            height:250px;
+            background-position: center;
+        }
     }
 }
+//-namber area
+.nambers-area {
+    background-image: url(../img/nambers.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    .shape {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        line-height: 0;
+        direction: ltr;
+        bottom: -1px;
+        transform: rotate(180deg);
+        svg {
+            display: block;
+            width: calc(100% + 1.3px);
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            .shape-fill {
+            fill:#fff;
+            }
+        }
+    }
+    .nambers {
+        .namber {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            font-family: $font-ar;
+        }
+    }
+}
+
 
 //-Global Sections---------------
 

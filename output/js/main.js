@@ -39,7 +39,7 @@ var typed = new Typed('.typing', {
 
 
 $(document).ready(function(){
-    $('.sclider-test').slick({
+    $('.sliders-img ').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,

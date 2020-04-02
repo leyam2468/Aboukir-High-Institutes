@@ -390,12 +390,47 @@ body {
         font-weight: bold;
         background-color: #1e7100c2; }
 
-.sclider-test {
+.about-area .sliders-img {
   width: 100%; }
-  .sclider-test div {
+  .about-area .sliders-img div {
     background-size: cover;
     height: 250px;
     background-position: center; }
+
+.nambers-area {
+  background-image: url(../img/nambers.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative; }
+  .nambers-area .shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: -1px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+    .nambers-area .shape svg {
+      display: block;
+      width: calc(100% + 1.3px);
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      .nambers-area .shape svg .shape-fill {
+        fill: #fff; }
+  .nambers-area .nambers .namber {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white; }
+  .nambers-area .nambers .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Cairo", sans-serif; }
 
 .scrollbar {
   position: fixed;
