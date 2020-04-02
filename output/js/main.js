@@ -36,9 +36,11 @@ var typed = new Typed('.typing', {
     backDelay: 3500,
     showCursor:false
 });
+
+
 $(document).ready(function(){
     $('.sclider-test').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
