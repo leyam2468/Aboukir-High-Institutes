@@ -390,6 +390,13 @@ body {
         font-weight: bold;
         background-color: #1e7100c2; }
 
+.sclider-test {
+  width: 100%; }
+  .sclider-test div {
+    background-size: cover;
+    height: 250px;
+    background-position: center; }
+
 .scrollbar {
   position: fixed;
   top: 0;
